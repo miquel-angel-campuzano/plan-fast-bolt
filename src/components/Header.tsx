@@ -1,12 +1,24 @@
 import { useNavigate, Link } from 'react-router-dom';
 import { UserMenu } from './UserMenu';
 import React from 'react';
+import { useSupabaseUser } from '../hooks/useSupabaseUser';
+import { Menu, X } from 'lucide-react';
+import { supabase } from '../lib/supabase';
+import { AuthModal } from './AuthModal';
 
 export function Header() {
   const navigate = useNavigate();
+  const { user } = useSupabaseUser();
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [showAuthModal, setShowAuthModal] = React.useState(false);
 
   const handleLogoClick = () => {
     navigate('/', { state: { scrollToHero: true } });
+  };
+
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+    setMobileOpen(false);
   };
 
   return (
@@ -46,8 +58,81 @@ export function Header() {
           </nav>
 
           <UserMenu />
+
+          <button
+            className="md:hidden p-2 text-neutral-700 hover:text-primary focus:outline-none"
+            onClick={() => setMobileOpen((v) => !v)}
+            aria-label="Open menu"
+          >
+            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
       </div>
+
+      {mobileOpen && (
+        <div className="fixed inset-0 z-50 bg-black/40 flex flex-col md:hidden">
+          <div className="bg-white w-full max-w-xs h-full shadow-xl p-6 flex flex-col">
+            <button
+              className="self-end mb-6 p-2 text-neutral-700 hover:text-primary focus:outline-none"
+              onClick={() => setMobileOpen(false)}
+              aria-label="Close menu"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <nav className="flex flex-col space-y-4 mb-8">
+              <Link
+                to="/saved-trips"
+                className="text-neutral-700 hover:text-primary text-lg font-medium"
+                onClick={() => setMobileOpen(false)}
+              >
+                My Saved Trips
+              </Link>
+              <Link
+                to="/pricing"
+                className="text-neutral-700 hover:text-primary text-lg font-medium"
+                onClick={() => setMobileOpen(false)}
+              >
+                Pricing
+              </Link>
+              <Link
+                to="/about"
+                className="text-neutral-700 hover:text-primary text-lg font-medium"
+                onClick={() => setMobileOpen(false)}
+              >
+                About Us
+              </Link>
+            </nav>
+            <div className="mt-auto">
+              {user ? (
+                <div className="border-t border-neutral-200 pt-4">
+                  <div className="mb-2 text-sm text-neutral-700 font-medium truncate">{user.email}</div>
+                  <button
+                    onClick={handleSignOut}
+                    className="w-full px-4 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+                  >
+                    Sign Out
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <button
+                    onClick={() => { setShowAuthModal(true); setMobileOpen(false); }}
+                    className="w-full px-4 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary-light transition-colors"
+                  >
+                    Sign In
+                  </button>
+                  <AuthModal
+                    isOpen={showAuthModal}
+                    onClose={() => setShowAuthModal(false)}
+                    onSuccess={() => {}}
+                    mode="sign_in"
+                  />
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
