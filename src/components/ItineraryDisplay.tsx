@@ -1,5 +1,5 @@
 // components/ItineraryDisplay.tsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 import {
   MapPin,
@@ -61,7 +61,7 @@ export function ItineraryDisplay({
         setIsLoading(true);
         setError(null);
         let q = supabase
-          .from<Place>('places')
+          .from('places')
           .select('*')
           .eq('city', city)
           .in('umbrella_category', categories)
@@ -69,7 +69,7 @@ export function ItineraryDisplay({
         if (travelStyle === 'free') q = q.eq('price_level', 'free');
         const { data, error } = await q.limit(15);
         if (error) throw error;
-        setPlaces(data || []);
+        setPlaces((data ?? []) as Place[]);
       } catch {
         setError('Failed to load itinerary. Please try again.');
       } finally {
