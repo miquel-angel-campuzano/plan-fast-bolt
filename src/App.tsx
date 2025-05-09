@@ -81,20 +81,23 @@ function PlannerApp() {
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50">
       <Header />
 
-      {/* Hero */}
-      {currentStep === 'city' && !planningStarted && (
-        <section className="bg-white py-24 px-4 border-b border-gray-200 relative">
-          <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center opacity-100" />
+    {/* Hero */}
+{currentStep === 'city' && !planningStarted && (
+  <section className="bg-white min-h-[85vh] px-4 pt-10 sm:pt-20 border-b border-gray-200 relative flex items-start">
+    <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center opacity-100" />
 
-          <div className="max-w-xl mx-auto text-center relative z-10">
-            
-            <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-              Where would you like to go?
-            </h1>
-            <CitySelector onCitySelect={handleCitySelect} />
-          </div>
-        </section>
-      )}
+    <div className="max-w-xl mx-auto text-center relative z-10">
+      <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2">
+        Where would you like to go?
+      </h1>
+      <h2 className="text-base sm:text-lg md:text-xl text-gray-700 mb-10">
+        Pick a city. Pick your preferences. Get your perfect plan.
+      </h2>
+      <CitySelector onCitySelect={handleCitySelect} />
+    </div>
+  </section>
+)}
+
 
       {/* Step Flow (Activity / Preferences / Loading / Itinerary) */}
       {currentStep !== 'city' && currentStep !== 'loading' && (
