@@ -104,30 +104,46 @@ function PlannerApp() {
 
 {/* Onboarding Stepper after city selection */}
 {currentStep !== 'city' && currentStep !== 'loading' && currentStep !== 'itinerary' && (
-  <section className="min-h-[100vh] flex flex-col items-center justify-start px-4 py-16 bg-white relative">
-    <button
-      onClick={goBack}
-      className="absolute left-4 top-4 p-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-full transition-colors"
-      aria-label="Go back"
-    >
-      <ArrowLeft className="w-5 h-5" />
-    </button>
-    <div className="max-w-xl w-full mx-auto text-center">
-      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
-        {selectedCity ? `Your trip to ${selectedCity}` : ''}
-      </h1>
-      {currentStep === 'activities' && (
-        <ActivityPreferences
-          city={selectedCity}
-          onComplete={handleActivityPreferencesComplete}
-        />
-      )}
-      {currentStep === 'preferences' && (
-        <TravelPreferences onComplete={handleTravelPreferencesComplete} />
-      )}
+  <section className="min-h-screen flex flex-col md:flex-row">
+    {/* Left side with background image and back button */}
+    <div className="w-full md:w-1/2 relative h-64 md:h-auto">
+  <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/21014/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center" />
+
+
+      {/* Back button positioned over the image */}
+      <button
+        onClick={goBack}
+        className="absolute top-4 left-4 z-10 p-2 text-white hover:text-gray-100 hover:bg-white/10 rounded-full transition-colors"
+        aria-label="Go back"
+      >
+        <ArrowLeft className="w-5 h-5" />
+      </button>
+    </div>
+
+    {/* Right side with content */}
+    <div className="w-full md:w-1/2 flex flex-col justify-center px-6 pt-6 pb-4 sm:pt-10 sm:pb-6 bg-white relative">
+      <div className="max-w-xl w-full mx-auto text-left">
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+          {selectedCity ? `Your trip to ${selectedCity}` : ''}
+        </h1>
+
+        {currentStep === 'activities' && (
+          <ActivityPreferences
+            city={selectedCity}
+            onComplete={handleActivityPreferencesComplete}
+          />
+        )}
+
+        {currentStep === 'preferences' && (
+          <TravelPreferences onComplete={handleTravelPreferencesComplete} />
+        )}
+      </div>
     </div>
   </section>
 )}
+
+
+
 
 {currentStep === 'loading' && <LoadingTransition />}
 
