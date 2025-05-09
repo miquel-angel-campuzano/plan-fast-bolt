@@ -20,7 +20,7 @@ import { LoadingTransition } from './components/LoadingTransition';
 import { trackEvent } from './lib/analytics';
 import React from 'react';
 
-type Step = 'city' | 'onboarding' | 'activities' | 'preferences' | 'loading' | 'itinerary';
+type Step = 'city' | 'activities' | 'preferences' | 'loading' | 'itinerary';
 
 function PlannerApp() {
   const { state } = useLocation();
@@ -29,9 +29,6 @@ function PlannerApp() {
   const [currentStep, setCurrentStep] = useState<Step>('city');
   const [travelStyle, setTravelStyle] = useState('');
   const [planningStarted, setPlanningStarted] = useState(false);
-
-  // New state for onboarding question step
-  const [onboardingStep, setOnboardingStep] = useState<'activities' | 'preferences'>('activities');
 
   useEffect(() => {
     trackEvent('landing_page_view');
@@ -46,13 +43,12 @@ function PlannerApp() {
 
   const handleCitySelect = (city: string) => {
     setSelectedCity(city);
-    setCurrentStep('onboarding');
-    setOnboardingStep('activities');
+    setCurrentStep('activities');
   };
 
   const handleActivityPreferencesComplete = (cats: string[]) => {
     setSelectedCategories(cats);
-    setOnboardingStep('preferences');
+    setCurrentStep('preferences');
   };
 
   const handleTravelPreferencesComplete = (style: string) => {
@@ -65,18 +61,13 @@ function PlannerApp() {
   };
 
   const goBack = () => {
-    if (currentStep === 'onboarding' && onboardingStep === 'preferences') {
-      setOnboardingStep('activities');
-    } else if (currentStep === 'onboarding' && onboardingStep === 'activities') {
-      setCurrentStep('city');
-      setSelectedCity('');
-    } else if (currentStep === 'itinerary') setCurrentStep('loading');
-    else if (currentStep === 'loading') setCurrentStep('preferences');
+    if (currentStep === 'activities') setCurrentStep('city');
+    else if (currentStep === 'preferences') setCurrentStep('activities');
+    else if (currentStep === 'itinerary') setCurrentStep('preferences');
   };
 
   const renderBackButton = () =>
-    (currentStep === 'onboarding' && onboardingStep !== 'activities') ||
-    (currentStep !== 'city' && currentStep !== 'loading' && currentStep !== 'onboarding') ? (
+    currentStep !== 'city' && currentStep !== 'loading' ? (
       <button
         onClick={goBack}
         className="absolute left-4 top-4 p-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-full transition-colors"
@@ -90,80 +81,76 @@ function PlannerApp() {
     <div className="min-h-screen bg-gradient-to-b from-white to-blue-50">
       <Header />
 
-      {/* Hero: City selection only */}
-      {currentStep === 'city' && !planningStarted && (
-        <section className="bg-white py-24 px-4 border-b border-gray-200 relative">
-          <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg')] bg-cover bg-center opacity-100" />
-          <div className="max-w-xl mx-auto text-center bg-white/80 backdrop-blur-md p-10 rounded-3xl shadow-lg">
-            <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-              Where would you like to go?
-            </h1>
-            <CitySelector onCitySelect={handleCitySelect} />
-          </div>
-          <button
-            onClick={() =>
-              document
-                .getElementById('city-selector')
-                ?.scrollIntoView({ behavior: 'smooth' })
-            }
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-500 hover:text-gray-800 transition-colors animate-bounce"
-            aria-label="Scroll down"
-          >
-            <ChevronDown className="w-8 h-8" />
-          </button>
-        </section>
-      )}
+    {/* Hero */}
+{currentStep === 'city' && !planningStarted && (
+  <section className="bg-white min-h-[85vh] px-4 pt-10 sm:pt-20 border-b border-gray-200 relative flex items-start">
+    <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center opacity-100" />
 
-      {/* Onboarding stepper: show one question at a time after city selection */}
-      {currentStep === 'onboarding' && selectedCity && (
-        <div className="relative max-w-2xl w-full mx-auto mt-16 bg-white/90 backdrop-blur-sm shadow-md border border-gray-200 rounded-2xl p-8">
-          {renderBackButton()}
-          <h2 className="text-2xl font-bold text-center mb-8">Your trip to {selectedCity}</h2>
-          {onboardingStep === 'activities' && (
-            <ActivityPreferences
-              city={selectedCity}
-              onComplete={handleActivityPreferencesComplete}
-            />
-          )}
-          {onboardingStep === 'preferences' && (
-            <TravelPreferences onComplete={handleTravelPreferencesComplete} />
-          )}
-        </div>
-      )}
+    <div className="max-w-xl mx-auto text-center relative z-10">
+      <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-2">
+        Where would you like to go?
+      </h1>
+      <h2 className="text-base sm:text-lg md:text-xl text-gray-700 mb-10">
+        Pick a city. Pick your preferences. Get your perfect plan.
+      </h2>
+      <CitySelector onCitySelect={handleCitySelect} />
+    </div>
+  </section>
+)}
 
-      {currentStep === 'loading' && <LoadingTransition />}
-
-      {currentStep === 'itinerary' && (
-        <ItineraryDisplay
+{/* Onboarding Stepper after city selection */}
+{currentStep !== 'city' && currentStep !== 'loading' && currentStep !== 'itinerary' && (
+  <section className="min-h-[60vh] flex flex-col items-center justify-center px-4 py-16 bg-white">
+    <div className="max-w-xl w-full mx-auto text-center">
+      <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
+        {selectedCity ? `Your trip to ${selectedCity}` : ''}
+      </h1>
+      {currentStep === 'activities' && (
+        <ActivityPreferences
           city={selectedCity}
-          categories={selectedCategories}
-          travelStyle={travelStyle}
+          onComplete={handleActivityPreferencesComplete}
         />
       )}
-
-      {/* Main Content: Hide 'How PlanFast Works' after city is selected */}
-      {currentStep === 'city' && !planningStarted && (
-        <section
-          id="city-selector"
-          className="min-h-screen flex items-center justify-center px-4 py-24 bg-white"
-        >
-          <div className="max-w-3xl text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              How PlanFast Works
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              We use smart algorithms to match your vibe, preferences, and travel style
-              with curated city experiences. Get instant plans with restaurants,
-              activities, and hidden gems—no hours of research needed.
-            </p>
-            <img
-              src="https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="PlanFast illustration"
-              className="mx-auto mt-10 rounded-xl shadow-md"
-            />
-          </div>
-        </section>
+      {currentStep === 'preferences' && (
+        <TravelPreferences onComplete={handleTravelPreferencesComplete} />
       )}
+    </div>
+  </section>
+)}
+
+{currentStep === 'loading' && <LoadingTransition />}
+
+{currentStep === 'itinerary' && (
+  <ItineraryDisplay
+    city={selectedCity}
+    categories={selectedCategories}
+    travelStyle={travelStyle}
+  />
+)}
+
+{/* Main Content: Only show How PlanFast Works on initial city step */}
+{currentStep === 'city' && !planningStarted && (
+  <section
+    id="city-selector"
+    className="min-h-screen flex items-center justify-center px-4 py-24 bg-white"
+  >
+    <div className="max-w-3xl text-center">
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        How PlanFast Works
+      </h2>
+      <p className="text-gray-600 text-lg leading-relaxed">
+        We use smart algorithms to match your vibe, preferences, and travel style
+        with curated city experiences. Get instant plans with restaurants,
+        activities, and hidden gems—no hours of research needed.
+      </p>
+      <img
+        src="https://images.pexels.com/photos/1051075/pexels-photo-1051075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="PlanFast illustration"
+        className="mx-auto mt-10 rounded-xl shadow-md"
+      />
+    </div>
+  </section>
+)}
     </div>
   );
 }
