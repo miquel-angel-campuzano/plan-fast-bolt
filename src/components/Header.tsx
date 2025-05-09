@@ -118,7 +118,10 @@ export function Header() {
               ) : (
                 <>
                   <button
-                    onClick={() => setShowAuthModal(true)}
+                    onClick={() => {
+                      setMobileOpen(false);
+                      setTimeout(() => setShowAuthModal(true), 300);
+                    }}
                     className="w-full px-4 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary-light transition-colors"
                   >
                     Sign In
