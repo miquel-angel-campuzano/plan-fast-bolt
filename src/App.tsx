@@ -84,26 +84,15 @@ function PlannerApp() {
       {/* Hero */}
       {currentStep === 'city' && !planningStarted && (
         <section className="bg-white py-24 px-4 border-b border-gray-200 relative">
-          <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg')] bg-cover bg-center')] bg-cover bg-center opacity-100" />
+          <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center opacity-100" />
 
-          <div className="max-w-xl mx-auto text-center bg-white/80 backdrop-blur-md p-10 rounded-3xl shadow-lg">
+          <div className="max-w-xl mx-auto text-center relative z-10">
+            
             <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
               Where would you like to go?
             </h1>
             <CitySelector onCitySelect={handleCitySelect} />
           </div>
-
-          <button
-            onClick={() =>
-              document
-                .getElementById('city-selector')
-                ?.scrollIntoView({ behavior: 'smooth' })
-            }
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-500 hover:text-gray-800 transition-colors animate-bounce"
-            aria-label="Scroll down"
-          >
-            <ChevronDown className="w-8 h-8" />
-          </button>
         </section>
       )}
 
