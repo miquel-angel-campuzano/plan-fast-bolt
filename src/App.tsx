@@ -42,6 +42,12 @@ function PlannerApp() {
       setTravelStyle('');
       setCurrentStep('city');
       setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 0);
+
+      // Remove scrollToHero from history state so it doesn't trigger again
+      window.history.replaceState(
+        { ...window.history.state, usr: { ...window.history.state.usr, scrollToHero: false } },
+        ''
+      );
     }
   }, [state]);
 
