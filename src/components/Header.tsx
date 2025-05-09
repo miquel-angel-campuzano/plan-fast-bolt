@@ -1,12 +1,9 @@
 import React from 'react';
-import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { UserMenu } from './UserMenu';
-import { useSupabaseUser } from '../hooks/useSupabaseUser';
 
 export function Header() {
   const navigate = useNavigate();
-  const location = useLocation();
-  const { user } = useSupabaseUser();
 
   const handleLogoClick = () => {
     navigate('/', { state: { scrollToHero: true } });

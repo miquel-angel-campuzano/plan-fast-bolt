@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 import { SaveTripButton } from './SaveTripButton';
 
-type Place = {
+export type Place = {
   id: string;
   name: string;
   description: string;

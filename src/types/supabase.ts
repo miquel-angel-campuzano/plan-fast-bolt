@@ -71,12 +71,48 @@ export interface Database {
           }
         ]
       }
+      places: {
+        Row: {
+          id: string;
+          name: string;
+          description: string;
+          umbrella_category: string;
+          duration: string | null;
+          local_tip: string | null;
+          maps_url: string | null;
+          website: string | null;
+          price_level: string | null;
+          city: string;
+          popularity_score: number;
+        };
+        Insert: Partial<Database['public']['Tables']['places']['Row']>;
+        Update: Partial<Database['public']['Tables']['places']['Row']>;
+        Relationships: [];
+      },
+      saved_trips: {
+        Row: {
+          id: string;
+          user_id: string;
+          name: string;
+          city: string;
+          categories: string[];
+          travel_style: string;
+          places: any[];
+          created_at: string;
+        };
+        Insert: Partial<Database['public']['Tables']['saved_trips']['Row']>;
+        Update: Partial<Database['public']['Tables']['saved_trips']['Row']>;
+        Relationships: [];
+      },
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      get_distinct_cities: {
+        Args: Record<string, never>;
+        Returns: string[];
+      };
     }
     Enums: {
       [_ in never]: never

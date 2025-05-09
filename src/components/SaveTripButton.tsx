@@ -5,12 +5,15 @@ import { supabase } from '../lib/supabase'
 import { useSupabaseUser } from '../hooks/useSupabaseUser'
 import { AuthModal } from './AuthModal'
 import { Toast } from './Toast'
+import { trackEvent } from '../lib/analytics'
+import type { Place } from './ItineraryDisplay'
+import type { Database } from '../types/supabase'
 
 type SaveTripButtonProps = {
   city: string
   categories: string[]
   travelStyle: string
-  places: any[]
+  places: Place[]
   isVisible?: boolean
 }
 
@@ -96,7 +99,7 @@ export function SaveTripButton({
           categories,
           travel_style: travelStyle,
           places,
-        })
+        } as Database['public']['Tables']['saved_trips']['Insert'])
 
       if (error) throw error
 

@@ -1,0 +1,464 @@
+[
+  {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": 13.7498558,
+      "lng": 100.4915765
+    },
+    "name": "The Grand Palace",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.6,
+    "user_ratings_total": 68486,
+    "place_id": "ChIJPzZsMU6Z4jARQUzvk913bCo",
+    "photos": [
+      {
+        "reference": "AeeoHcItqEsJ74WMIadVbzo4xkIW-47j3FKZuw33NtPnAux_NIo0pAJ0QWBBqeo6fM_Ns0mA-qdv6t7TyO1NUOxbSkkrt8dzGfatA0_fT_FT857rViFPjKigPjnSOzhOq12GdJDHoGy9yAYnpqMROwelCGl-UZ6s9tIZ09KOM5Iho5yjw1EljXYL_j8Hdulmip38b2MMPMA-odjPEwcqdcs5QTsH6uW5btV4p3TzmGmAbVVZ8lPlMJXO-__j9a92G_Isns9v2RDYkqT_PKA3NbxRuQqOsCBmKi48S2Jq-Fwrl87A0QUEvfttMDisxUuS0H4vMwCDbP-M65FsSewB6V6fOM-WSZSMDbXlCvmvLIlMORFCNN7GdXYEKhHpJdkcYad-Ril1iUy2z79SSMPFyxExjzirbJ0sMro9X-5QHiyGcsQmYS-sdw2arXnruQU9adu7tzseCzle4HxHWbPXJODzl2GNHJdnVMrhnoPHvcalKmi8sPojxm0tUz4MqYnGXraLfK3C53OT1f24ij4XilwF7_yecDLNyIqGx789DzKkM73P-zyuLF0iZu0DqG28Tb7uf1pdic1sijGP1E0wuXHChQUefcRfcn8IH6PbQYIFsaRcgr_r-3Z59aZEFHn5nMatI1JVXQ",
+        "attribution": [
+          "<a href=\"https://maps.google.com/maps/contrib/114610628376887622359\">Еаликино Абинореал</a>"
+        ]
+      }
+    ],
+    "business_status": "OPERATIONAL",
+    "vicinity": "Phra Borom Maha Ratchawang, Phra Nakhon",
+    "fetched_at": "2025-04-23T07:31:07.378Z",
+    "description": "The Grand Palace in Bangkok is a dazzling and historic complex that has served as the official residence of the Kings of Siam (and later Thailand) since 1782. Famed for its intricate golden spires and ornate architecture, the complex is a breathtaking example of traditional Thai craftsmanship. Inside, visitors can explore the revered Wat Phra Kaew, home to the Emerald Buddha, which is considered the most important Buddhist temple in Thailand. The palace grounds feature elaborately decorated halls, courtyards, and gardens, offering a vivid glimpse into the country's royal legacy. Visitors are often awestruck by the blend of architectural grandeur and spiritual significance, making it a must-see landmark in Bangkok.",
+    "website": "https://www.royalgrandpalace.th/th/home",
+    "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJPzZsMU6Z4jARQUzvk913bCo",
+    "enrichment_status": "OK",
+    "category": "monument",
+    "subcategory": "royal palace",
+    "mood_tags": [
+      "historic",
+      "must-see",
+      "cultural",
+      "spiritual"
+    ],
+    "suggested_visit_time": "morning",
+    "duration": "2–3 hours",
+    "local_tip": "Dress modestly with shoulders and knees covered; if needed, you can borrow cover-ups at the entrance for a small fee. Arrive early to avoid large tour groups and the midday heat.",
+    "popularity_score": 0.97,
+    "price_level": "$$"
+  },
+  {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": 13.7516435,
+      "lng": 100.4927041
+    },
+    "name": "Sagrada Familia",
+    "types": [
+      "tourist_attraction",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.7,
+    "user_ratings_total": 38216,
+    "place_id": "ChIJ5Wl37g6Z4jARiP4itarBPDQ",
+    "photos": [
+      {
+        "reference": "AeeoHcKiaglvVm84ghIeZubtbYxmUx2MxrfCivyI_lLr5L5B2pGEJH6xkhTnA1JRDCiv-Ef_mNRxsqP4ViY7E4oTOjmh1T8A_0o7saN_ZfRbfaFnyI8TFUPXSwe8Yz66druu5F_8rqnoYGMBtEbw5RYowM2PD39oMZZ-1dEQSwmiKKRkoLALoyIqdFmbhMDuOrctmGBUIj_8MR0sdwR-KXmmRHVm1quHw4guj3vdUzGAorfgVLbVndgfIIqhFHZ8Qs3AuidkFkYeZq3ahHlwzOpO1B2IjxQ3Za1ARhKVgzGWNkGm6s6yK6QkRu0toJ_bQ8nSJciLMqPfKSCcCl4i514EKKmEMe8UF5c3-7mlehtx-KXhnpLvdVBp3GcfDKmo_d6OOtLJ_MOV1H3mrYY8-U9YoqPYWSoupWrUDcZYb2KJ4UE4U8AjiBdzHHF58nYiC0gn7tQ0Czlvjd63C7mlEMeEQYCUqrVGAp5m_3Y5EYOcILJ4XYKi91vPCzl7i8v1mbcGt2qvDIUO3JYhymw1UoTiihcWF7FYl0Qd2_mKgd4sH9aTdILn-MxQfSScTVnPptOZsnbu-JQkOHGxaGwwT6WjT4w92_FcayCH-rLfjjz0RZv02ACB47pV1Pr-3JZLrdN_",
+        "attribution": [
+          "<a href=\"https://maps.google.com/maps/contrib/114610628376887622359\">Еаликино Абинореал</a>"
+        ]
+      }
+    ],
+    "business_status": "OPERATIONAL",
+    "vicinity": "QF2V+M34, Na Phra Lan Road, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+    "fetched_at": "2025-04-23T07:30:55.248Z",
+    "description": "The Sagrada Familia is Antoni Gaudí's masterpiece and Barcelona's most iconic landmark, a stunning unfinished basilica that welcomes nearly 5 million visitors annually. This unique modern temple features intricate facades depicting biblical scenes, soaring towers, and breathtaking stained glass that bathes the interior in colorful light. Construction has been ongoing since 1882 and continues today, making it a living testament to Gaudí's architectural genius and vision. The basilica's combination of Gothic and Art Nouveau elements creates an otherworldly atmosphere that leaves visitors in awe.",
+    "website": "https://www.royalgrandpalace.th/th/home",
+    "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ5Wl37g6Z4jARiP4itarBPDQ",
+    "enrichment_status": "OK",
+    "category": "religious site",
+    "subcategory": "basilica",
+    "mood_tags": [
+      "cultural",
+      "historic",
+      "must-see",
+      "spiritual",
+      "artsy"
+    ],
+    "suggested_visit_time": "morning",
+    "duration": "2-3 hours",
+    "local_tip": "Upgrade your ticket for tower access via elevator to enjoy spectacular views of Barcelona, and consider booking a guided tour to fully appreciate the symbolism and history behind Gaudí's architectural details.",
+    "popularity_score": 0.9,
+    "price_level": "$$"
+  },
+  {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": 13.7558693,
+      "lng": 100.4932804
+    },
+    "name": "Sanam Luang",
+    "types": [
+      "tourist_attraction",
+      "park",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.6,
+    "user_ratings_total": 24626,
+    "place_id": "ChIJ-WOptA2Z4jARRFoeZFcz_Gk",
+    "photos": [
+      {
+        "reference": "AeeoHcKkHjGi2UpHfnTjd3oVF5pJ8lsbgLblyfVjHC7_R47kSplPugMWmz4I-a2uQoS11ACoM54O8aDo4TfirI-3rOcWBLBJhJsfURrTXmVkA4c2-QraeA6lV0MfidGvpEFBOD-LNCmZ7jb866BKVAhWHSqbg4tY8XWTHsdJWDrDlRhLok85qRs6K4p4ZJJ9oRasvuRHfUVKdS4AqhMxDC2xwalByAzbLzFqJWgiZHFhj-pOrceJGugGwoIp0XmgOwkl9hQLDmnXa_p2ZEU6ue9qJxtF9ufoUT78glVJJbtryZZQ7wW-0y0U4loSpiLkeV69Wy_txu3YP2lShWqtGeJsJ7DtZd1jLoTunXiX71mS1cRV3UYJxcf8w8dMhSft7UCLiIgjEb--oK0zVtrlleOT9J7YhJIsGQMJpKO4w-DxNq06GV9GngfaYSKpU7fsSu9FeBI20-R5Xd8ySwdHIcuQDy5GJtmXgIEsX3BoRuokRRwBmHB8WY-nl1i0KmkZsQNQFJOzc3CeOkHKcF9zMWw24kzbe5NXvUPLpLRhlSLRLQLKbi-sJgqtZfdkFIoPIa_dTGU--1ohH_4jIPJE3yCbFEtLWDzOqFMZLdIrsnPsgppfpBBdfDvZLKRO0WkTQ0cneRsoi1G5",
+        "attribution": [
+          "<a href=\"https://maps.google.com/maps/contrib/117615996872373859844\">Kittipun Kunsiripunyo</a>"
+        ]
+      }
+    ],
+    "business_status": "OPERATIONAL",
+    "vicinity": "QF4V+88R, Thanon Ratchadamnoen Klang, Khwaeng Phra Borom Maha Ratchawang, Khet Phra Nakhon",
+    "fetched_at": "2025-04-23T07:30:52.956Z",
+    "description": "Sanam Luang is a vast, historic public square located in the heart of Bangkok, adjacent to the Grand Palace and Wat Phra Kaew. Serving as a royal ground since the early Rattanakosin period, Sanam Luang has witnessed countless significant events, including royal ceremonies, public festivals, and cultural gatherings. The open field offers visitors a chance to experience a sense of Bangkok’s royal and civic life, acting as both a peaceful urban respite and a lively event space depending on the season. The juxtaposition of greenery against the ornate palace walls creates a picturesque setting, especially at sunset. For travelers, Sanam Luang remains a must-see for its historic value, local culture, and striking city views.",
+    "website": null,
+    "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJ-WOptA2Z4jARRFoeZFcz_Gk",
+    "enrichment_status": "OK",
+    "category": "park",
+    "subcategory": "historic public square",
+    "mood_tags": [
+      "historic",
+      "cultural",
+      "relaxed",
+      "must-see",
+      "local-gem"
+    ],
+    "suggested_visit_time": "late afternoon",
+    "duration": "30 minutes–1 hour",
+    "local_tip": "Visit in the late afternoon when the temperature cools down, and enjoy people-watching or catch a traditional event if you’re lucky. Bring a mat or blanket to sit comfortably on the grass.",
+    "popularity_score": 0.85,
+    "price_level": "free"
+  },
+  {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": 13.7459351,
+      "lng": 100.5352057
+    },
+    "name": "SEA LIFE Bangkok Ocean World",
+    "types": [
+      "aquarium",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.5,
+    "user_ratings_total": 23998,
+    "place_id": "ChIJH4I85c2e4jARUMYLeiqfBd0",
+    "photos": [
+      {
+        "reference": "AeeoHcIive3ehAMH0pX3QZzSUwq1rjq6vl4ItW9nXjEktDA-B2h1PLI8Mswv3ag7GfbbqsfBPBJ4LKnUeFR_kZ76PurNGCWl0mcloTq1L7_GIlLBPMM7W940gUoffmU5CUMaiKRzQs-pt5s5IdPDZ8rS8X0rv6CNkEYwXZ8ojgjMB1Bu984E0sLXKeaoRjBExmEmchOcLz3EcitG7S7jidoSoTtIECgQ2GbgZJ2VvK-hmJvF6Mumhkngn_ZEtlLj5CuLRZNRlG6KRC3nfojmEPSrZ7fQZkG6gG3MHwCni4OuR8OhYOc0PYDALLoQUsXGKKLQ5527vcxg8BN3yITWPpQ8IH7P2nYkbT3EGRzhEvsxTny2tBiDcwQiFjZyGI3XZHoufRPuO7DBRUou0nx97FD75jA7htDeiXeYVbvmKJzlwzDDzjnf2qWH-qOQbyedvArkFIqpLsjASQudodoTKc-elo7565M4PenAQrXFndL0UduTv8uTlQxaR87K7sKMa7xLm1rQfkWtzFDy08x8fsYeWO1ZbUTw9NxqkWyGAdUb33PhK6rV-9lJ9eBGbiaOJOu_blKPkq0KyrW21-YzVSRBElspuZIoTn-4OeOgvvDB2vvWoX5tCXNGeIBIkpxFOL4qdmKZqsFQ",
+        "attribution": [
+          "<a href=\"https://maps.google.com/maps/contrib/116707099814941336730\">Baldur</a>"
+        ]
+      }
+    ],
+    "business_status": "OPERATIONAL",
+    "vicinity": "ชั้น บี1-บี2 สยามพารากอน, 991 Rama I Road, Khwaeng Pathum Wan, Pathum Wan",
+    "fetched_at": "2025-04-23T07:30:52.956Z",
+    "description": "SEA LIFE Bangkok Ocean World is Southeast Asia’s largest aquarium, located beneath the bustling Siam Paragon shopping complex in the heart of Bangkok. Spanning over 10,000 square meters, this spectacular marine attraction immerses visitors in a vibrant underwater world, featuring more than 400 species and 30,000 aquatic creatures ranging from elegant sharks and rays to playful penguins and mesmerizing jellyfish. Interactive experiences like walking through a 270-degree ocean tunnel, feeding sessions, and behind-the-scenes tours make it a hit for travelers of all ages. Its innovative exhibits and carefully recreated marine habitats provide both entertainment and education, offering a fascinating escape from the city’s heat and noise. Travelers seeking something beyond the typical city sights will find SEA LIFE Bangkok Ocean World an unforgettable highlight, blending adventure, discovery, and fun. Whether traveling solo, as a couple, or with family, the aquarium promises a blend of wonder and relaxation.",
+    "website": "https://www.visitsealife.com/bangkok/en/",
+    "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJH4I85c2e4jARUMYLeiqfBd0",
+    "enrichment_status": "OK",
+    "category": "experience",
+    "subcategory": "aquarium",
+    "mood_tags": [
+      "must-see",
+      "adventurous",
+      "relaxed",
+      "family-friendly",
+      "cultural"
+    ],
+    "suggested_visit_time": "afternoon",
+    "duration": "1–2 hours",
+    "local_tip": "Arrive early in the afternoon to avoid school tour groups and enjoy the daily feeding shows for sharks and penguins. Combine your visit with shopping or dining in the Siam Paragon complex for a convenient day out.",
+    "popularity_score": 0.85,
+    "price_level": "$$"
+  },
+  {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": 13.746737,
+      "lng": 100.5302166
+    },
+    "name": "Bangkok Art & Culture Centre",
+    "types": [
+      "art_gallery",
+      "tourist_attraction",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.5,
+    "user_ratings_total": 18737,
+    "place_id": "ChIJfWxvUM2e4jARCxWWp4sC0B4",
+    "photos": [
+      {
+        "reference": "AeeoHcL1IDmfbEQjkaUIFIUO5rfaoed5KSNToE1qyKxAC18o_AcP0NeAyLxHU2cjczGU2xZroHW_GYPmPMeNTdbVsUwDh9v8ClwSvfT8O9xZzskEsFz0MBb_nU8vgb4oYre_OgWt0TSQoiXGmEokaqMtWwNQUKljxxdjSE4yAlt-OPmOZ5WYnvQBHr9yKWAhTpmGAkxDqG0zQhoL3pUORqGD03DkwcEMnTRP3SmV7Bmq7_Tx2S8rUkO7Wgsqwke9rcW4CPavRMVfcq5n10JoKoWdZHSBgElI43ug7TvgBifvGeeRts6UzwRC09t0CIvtRyK2jHglDFjAsZauTCVuIrATmXz2jXe9dte6WQxlk5NEsAOVinMJyXH_OkvR4yO500vGwu1UfnQCfRpZvBNpz6cGVjdkyNfz3AkUk6TwO3EE-KRMvJJQOJbEplbH3x_q9Nv-GE19g8SU2HZYL51yrfCfS9EmxWl9DCaPM2JUvXPxODbSkfz-_sSkGU_NJHG3CyRgwvOLvY1zeVi5QfohVDzr7V1sHJ3FfgAHgCVKRzNcl8Yhr8C1abIJ2m2Ln_SImleSB4fSqFzGIhOXx2CmZ-WlDfby3OyqMzeCcczeENG0GXFFLHL3XtRtiDGpASctD-f3BHmDWDGp",
+        "attribution": [
+          "<a href=\"https://maps.google.com/maps/contrib/116130681940453681399\">somkietr rojanasathit</a>"
+        ]
+      }
+    ],
+    "business_status": "OPERATIONAL",
+    "vicinity": "939 Rama I Road, Khwaeng Wang Mai, Pathum Wan",
+    "fetched_at": "2025-04-23T07:30:52.956Z",
+    "description": "The Bangkok Art & Culture Centre is Bangkok’s leading contemporary art venue, celebrated for its dynamic exhibitions, multidisciplinary approach, and open, inviting architecture. Spanning several floors, the centre hosts rotating showcases of Thai and international contemporary art, with spaces dedicated to painting, photography, sculpture, design, and performance. Its light-filled central atrium and spiral walkways encourage visitors to explore diverse galleries, creative shops, and artisanal cafés, making it a cultural hub for both locals and travelers. The Centre frequently hosts film screenings, talks, and hands-on workshops, ensuring there is always something new to experience. Its central location, affordable admission, and vibrant program make it a must-see for anyone interested in Bangkok’s thriving arts scene.",
+    "website": "http://www.bacc.or.th/",
+    "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJfWxvUM2e4jARCxWWp4sC0B4",
+    "enrichment_status": "OK",
+    "category": "museum",
+    "subcategory": "contemporary art museum",
+    "mood_tags": [
+      "artsy",
+      "cultural",
+      "must-see",
+      "local-gem",
+      "relaxed"
+    ],
+    "suggested_visit_time": "afternoon",
+    "duration": "1–2 hours",
+    "local_tip": "Visit late in the afternoon for a quieter experience and enjoy a coffee at one of the independent cafés on the upper floors while overlooking the busy street below.",
+    "popularity_score": 0.8,
+    "price_level": "free"
+  },
+  {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": 13.7430288,
+      "lng": 100.5091598
+    },
+    "name": "Wat Mangkon Kamalawat (Wat Leng Noei Yi)",
+    "types": [
+      "tourist_attraction",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.6,
+    "user_ratings_total": 15157,
+    "place_id": "ChIJZ-IlRCKZ4jARzgWVA3vA_0k",
+    "photos": [
+      {
+        "reference": "AeeoHcLvx0m1TpPzN_r78Q3-BcpJvwFlAixyVsfYuJWZz8Bu1bKrTTrRORvjg_F8mx0QXKcoCiu-_cUqwtZpd_vMKu4IELNhd5M-bsbZUSmOho5w9jx5ZbKQXJzukrfnFO0dQcmK-ofihm4FqfFus-K2cqKpi_ja5cQzgObiVOdg1dSj6JoipMMCX8fYd9drbvleiRtC6RuQc1H_nZDZWvNXvGdYXJGhBYbv6M8Jq3d642PBIZ0iOjI4VOyXaLhxr4WJk-XTaFcCac7zaoi6h11YE5ICC_iAIQpTjFH55zM7nWX88G2pgbvPnQxj_VJNJ3JMcnbTRQIkEvc91yNoNlSlBXUTs5wDmQjFpvE8xJOWh6JWW95PQ2PfufcaL_E47ehbFQxdoY_ejBUgogzIWetIned2vHivLJxAPuBzlpCObwC5JZUt2U99pPgg5Kakbzr9RQpgeU0h0QBDD2yU6VtsKl5KNZEbaFpaaGSrBD9ynHr6UyI8ENpNLvZVRdB3pf2bj5wiosktS_tMmk0hEUDKXce1hLhzOTd5E9XnA8-Pga0T6-OT8ueSlFsU0ZXzXnivFJSmn6As0LPFUSdAXyyr-qQrL0zENe-IrfelZNguCTdVyFXmJm414aAbmX1o2_0BLCJHTw",
+        "attribution": [
+          "<a href=\"https://maps.google.com/maps/contrib/106021969012530647344\">Pearl veget</a>"
+        ]
+      }
+    ],
+    "business_status": "OPERATIONAL",
+    "vicinity": "423 ถนน เจริญกรุง, Khwaeng Pom Prap, Khet Pom Prap Sattru Phai",
+    "fetched_at": "2025-04-23T07:30:52.956Z",
+    "description": "Wat Mangkon Kamalawat, also known as Wat Leng Noei Yi, is Bangkok's most significant Chinese Buddhist temple and a vibrant spiritual center in the city’s Chinatown. Established in the 19th century, the temple seamlessly blends Chinese and Thai architectural styles, adorned with intricate dragon motifs, vibrant ceramics, and ornate altars. It serves as the focal point for major celebrations like Chinese New Year and the Vegetarian Festival, attracting both worshippers and curious travelers. Within its spacious courtyards, visitors can witness elaborate rituals, light incense, and experience the rich tapestry of Bangkok’s Chinese heritage. The atmosphere is always lively, especially during festivals, making it an essential destination for those interested in spiritual traditions and local culture.",
+    "website": "https://www.facebook.com/Wat.Mangkonkamalawat.Temple/",
+    "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJZ-IlRCKZ4jARzgWVA3vA_0k",
+    "enrichment_status": "OK",
+    "category": "religious site",
+    "subcategory": "Buddhist temple",
+    "mood_tags": [
+      "spiritual",
+      "historic",
+      "cultural",
+      "must-see",
+      "local-gem"
+    ],
+    "suggested_visit_time": "morning",
+    "duration": "45–90 minutes",
+    "local_tip": "Visit in the early morning to observe local devotees performing rituals and to avoid festival crowds; don't miss the small vegetarian food stalls just outside the temple for a tasty local snack.",
+    "popularity_score": 0.7,
+    "price_level": "free"
+  },
+  {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": 13.7493569,
+      "lng": 100.5281613
+    },
+    "name": "Jim Thompson House Museum",
+    "types": [
+      "museum",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.4,
+    "user_ratings_total": 14742,
+    "place_id": "ChIJWVT7hDKZ4jARGJOhe21RhOk",
+    "photos": [
+      {
+        "reference": "AeeoHcIgFrfy6bdxSvdiElaSopeds-y9_jhaYF7j6j9_G5mJHU3y8lfxnR8p9mVit5YATaSVffxvQVutAXrAr414BheCcCJbSrQm2gFIts7nX-M3vxsl8UD4SSR4GzQODRwrZo16_XGkY5Xjb6gdQgzDDcHUJ1h4KjonkvqcBiJDZuf_n0IfrXks4rPgsrKvPDw8H2NItF5X8R3VQ5LK3VQZL3fMekXEc0qXkiN7cv9-DpvPrHYscP64XoPNCS_LsdlkYZfHlvL1LeLb4cQOL8pvzF-3PhQoMLXV8S5iSTViC3ss-nXghLBdx4-LDEFSElcH9_hfv6PmW5av9hpYw2DSLSpZ_mcTuCqmy0L389fOVYSS4ZceccEDgHEU1NNV_WT_n-VJaP84Q58xYlrncstxKAHPbkGUHiw2G3tzFWTHKWuf9Ct3I53MrkZNn1Ar5dWPA0k3Gk2r3-Rf-guavF-29ktzK1MJhEHMonhvPCgJgj8_ypuMwh_RCgWtF4bXENpe7huJyl9M9B3GNGFNb1Xp3mb72fUmTNZTBXRBzvqaYNjQ2q61k47v_JvltesyIamNb97siQPhk9foczbkJI88cUQYEOWon4eM7Y9wOcxgv68VjTPLXAiGJbm0Vq7PL0_WzWBPhPcb",
+        "attribution": [
+          "<a href=\"https://maps.google.com/maps/contrib/114119398897476175889\">andreas geikowski</a>"
+        ]
+      }
+    ],
+    "business_status": "OPERATIONAL",
+    "vicinity": "6 Soi Kasem San 2, Khwaeng Wang Mai, Pathum Wan",
+    "fetched_at": "2025-04-23T07:31:00.291Z",
+    "description": "The Jim Thompson House Museum is a captivating cultural landmark nestled in the heart of Bangkok. Once the home of Jim Thompson, an American entrepreneur credited with revitalizing Thailand's silk industry in the mid-20th century, the museum showcases traditional Thai architecture seamlessly blended with Western influences. Visitors can explore a series of exquisitely preserved teakwood houses filled with Thompson’s personal art collection, rare antiques, and vibrant textiles. Surrounded by serene tropical gardens, this location offers a tranquil escape from the city’s bustle and provides deep insight into both Thai heritage and the enigmatic story of Jim Thompson’s mysterious disappearance. A tour here is both an immersive cultural journey and a glimpse into the lifestyle of one of Bangkok’s most intriguing expats.",
+    "website": "https://jimthompsonhouse.org/",
+    "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJWVT7hDKZ4jARGJOhe21RhOk",
+    "enrichment_status": "OK",
+    "category": "museum",
+    "subcategory": "historic house museum",
+    "mood_tags": [
+      "cultural",
+      "historic",
+      "must-see",
+      "artsy",
+      "local-gem"
+    ],
+    "suggested_visit_time": "afternoon",
+    "duration": "1–2 hours",
+    "local_tip": "Take a guided tour for richer storytelling and don’t miss the silk shop, where you can purchase high-quality Thai silk as a unique souvenir.",
+    "popularity_score": 0.8,
+    "price_level": "$"
+  },
+  {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": 13.7242482,
+      "lng": 100.5229171
+    },
+    "name": "Sri Maha Mariamman Temple (Wat Khaek)",
+    "types": [
+      "hindu_temple",
+      "tourist_attraction",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.6,
+    "user_ratings_total": 11737,
+    "place_id": "ChIJnyXs5dGY4jARxAURliWpDZg",
+    "photos": [
+      {
+        "reference": "AeeoHcKhOiiOszzedHMCVGDR3iyVMuDZALn-1mIWhyYECn5tbQ_qDtTB1ba5fAtiPGj4HLiOdMDYQ03aRFSD2WJ3MkysZlaVVZCLC2GpCtbFij8IChsH5HGyQ6rm5maZF_GPekqWBkFFPWCXYjjIgE5MbOpv99uZfpO_7BK2Qk-TAm2lkild-5-lafqI8GY-Lg9X-LHefpWuuAC7St0yXocsSumjoIRXBLMNQ00ZBBktrJk7b0pp0pfYpgesL3OhR-xKwVsT5_LER0gClHTN_FG2acRzw1p1QevSLND4uIkUmJdLSC96snKlzS1q_BNlNt1gGgbOQSyEXi_j5VxzywO6-6KcXI9mxb9owLhuEuDFNPap7C-s7UGd1tQEB-1O4UaE3rbeGxu7jlz3bBwcz47kLrhtLJ0AZBwivdMir1A8kRUcHqg1ZhIIpDlkn3IyuX1YVUQoRt0jIAicjJOB4KS43X7m804H9omnnTKZ_h-fjzJJeunwKPqBkw3_E5wePZdtMYx8EgUvoLziRnbB-WpoDK716_fngE0Wv1bwOd1kpaBlfQyf05D0LGekjSQOjvm40x-mUhZNmYCG-iO9EZMfojbGyqsZa2_ZyFpDYzIEaOIbhufvnyr9_aGO4j-Y-MqEj4txpMiN",
+        "attribution": [
+          "<a href=\"https://maps.google.com/maps/contrib/114213138647853003758\">Daniela</a>"
+        ]
+      }
+    ],
+    "business_status": "OPERATIONAL",
+    "vicinity": "2 Thanon Pan, Khwaeng Bang Rak, Khet Bang Rak",
+    "fetched_at": "2025-04-23T07:30:52.956Z",
+    "description": "Sri Maha Mariamman Temple, locally known as Wat Khaek, is Bangkok’s most important and vibrant Hindu temple. Established in the late 19th century by Tamil immigrants, it stands out with its richly decorated, South Indian-style gopuram adorned with colorful deities and mythological figures. The temple is dedicated to the goddess Mariamman, and is renowned for its lively daily rituals, fragrant offerings, and grand Hindu festivals, especially Navaratri, which attracts thousands of devotees and curious visitors. Stepping inside, travelers are immersed in a tapestry of incense smoke, rhythmic chanting, and the vibrant atmosphere of multicultural Bangkok. The temple is a focal point for the city’s Indian community and offers a unique spiritual and cultural experience distinct from Bangkok’s Buddhist landmarks.",
+    "website": "https://www.facebook.com/HinduMeeting.HM?mibextid=ZbWKwL",
+    "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJnyXs5dGY4jARxAURliWpDZg",
+    "enrichment_status": "OK",
+    "category": "religious site",
+    "subcategory": "Hindu temple",
+    "mood_tags": [
+      "spiritual",
+      "cultural",
+      "historic",
+      "must-see",
+      "local-gem"
+    ],
+    "suggested_visit_time": "morning",
+    "duration": "30–45 minutes",
+    "local_tip": "Remove your shoes before entering, and consider visiting during a morning prayer for a more peaceful experience before the crowds arrive. Modest attire is required—bring a shawl or scarf if needed.",
+    "popularity_score": 0.7,
+    "price_level": "free"
+  },
+  {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": 13.7431972,
+      "lng": 100.5301387
+    },
+    "name": "Pathumwan Princess Hotel",
+    "types": [
+      "tourist_attraction",
+      "shopping_mall",
+      "lodging",
+      "restaurant",
+      "point_of_interest",
+      "food",
+      "establishment"
+    ],
+    "rating": 4.5,
+    "user_ratings_total": 9348,
+    "place_id": "ChIJFaLTtdKe4jARdKflx49LvdA",
+    "photos": [
+      {
+        "reference": "AeeoHcIfzm4CjkUMtWrmYhllQED1JLBE5lbd6_iEztZDo39_S2K4FdMnXSP0JgpSt955JheqKGbiSas0E1Sg8sGAiH2Aa2H36e--9gUgJq8V4njLhibZrjyYETuXlviWwnbpeTZZzRDV_jh8g5uOSiZ6DSzAfZf9G_Ija4o77WONLtWkbBFjX3EvYi5WIeCQULZ12UJr7PqfdwQrq-ZzTIZklRxQvppmI4Z5ByH3SdJWK-j_kJinc1HbdRiwAqepUK3WxocTanPZ9WQUP8ljEkDxV-Q91Dr4yMYr1gOXOzp4-xnt6N9FYxaKDGEJsnrhn9iYm-L9TrihjDo",
+        "attribution": [
+          "<a href=\"https://maps.google.com/maps/contrib/105529198599736349764\">Pathumwan Princess Hotel</a>"
+        ]
+      }
+    ],
+    "business_status": "OPERATIONAL",
+    "vicinity": "444 Phaya Thai Road, Khwaeng Wang Mai, Pathum Wan",
+    "fetched_at": "2025-04-23T07:30:52.947Z",
+    "description": "Pathumwan Princess Hotel is a contemporary luxury hotel situated in the heart of Bangkok, directly connected to the bustling MBK Center. Renowned for its sleek modern design, the hotel offers guests stunning panoramic city views, exceptional hospitality, and a wide array of amenities including a rooftop pool, state-of-the-art fitness center, and an impressive selection of dining venues. Its prime location provides effortless access to major shopping malls like Siam Paragon and Siam Discovery, as well as cultural landmarks and the BTS Skytrain. Travelers appreciate the serene retreat the hotel provides amid the energy of central Bangkok, making it ideal for both leisure and business visitors. The attentive service and relaxing atmosphere set it apart as a trusted haven in the city’s vibrant landscape.",
+    "website": "https://www.pprincess.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+    "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJFaLTtdKe4jARdKflx49LvdA",
+    "enrichment_status": "OK",
+    "category": "hotel",
+    "subcategory": "luxury hotel",
+    "mood_tags": [
+      "relaxed",
+      "romantic",
+      "foodie",
+      "must-see",
+      "local-gem"
+    ],
+    "suggested_visit_time": "afternoon",
+    "duration": "1–2 days",
+    "local_tip": "Take advantage of the direct access to MBK Center for shopping or street food, and visit the hotel’s rooftop pool around sunset for spectacular skyline views.",
+    "popularity_score": 0.84,
+    "price_level": "$$$"
+  },
+  {
+    "city": "Bangkok",
+    "coordinates": {
+      "lat": 13.7525651,
+      "lng": 100.4940402
+    },
+    "name": "Bangkok City Pillar Shrine",
+    "types": [
+      "tourist_attraction",
+      "place_of_worship",
+      "point_of_interest",
+      "establishment"
+    ],
+    "rating": 4.8,
+    "user_ratings_total": 9220,
+    "place_id": "ChIJbxEMbg6Z4jARJ7AV6fSNNeU",
+    "photos": [
+      {
+        "reference": "AeeoHcLibD4nBUNwa2yXUwXhD0alRxrldGI7IcN02LxdAL3as1sK23kqxVsjc7Ckj5REILMEXsqUcCG8DXG13pw8GVetSy69dzrPbep2pR02fxSFcem2Cqi7Cg37MfTCMMkxsc3X9q-f9uIJ5tyxu1Pzx2onph87akzs-KZn3QRWyAC3koWZj2nw-skIVcy1fw2VimpjrwAqAnX7Ez7Evhkzw_JUR8y-ycMMH4Dnq2kqm7eg1m9BNQvovzkzJraAudcUtmEoa0xUVjG--futiNq8-S5OloRDhX-eEmMVmvm3abB4geKmPyHysQeeQTMb74bDJDI_F_KPcb1dN7Jy_VpZ7iv7VEXMjfRYFM1BihVlgsjav3uTPGip9J319ep7pAyGegdFu0KuZolN8vvJA_1kxFntO4XqkItrzW7CiPRHG4XMQIvuKMkggVQ6YhcJzwLlTRhiyoqY-k5iYGfd6Zh2HGMdOPI14lkNtiVnHTOtMJ12aDzg3MAvJ9MzF1ngtDb1nT6AXxMUHYx8LMtxGJCc3f3xXwkkVa52MokSADGjU7f_AwTeAU-5ORZD2ZpyBgClJInnEgqvtS-WyVdkF8Kf6Wip_-znU_3JZ1ooq0JJM_TW0FZXdzHWgOCv2AGKWj884BEWXB_q",
+        "attribution": [
+          "<a href=\"https://maps.google.com/maps/contrib/114832336104245602815\">มณีรัตน์ คงผ่องแผ้ว</a>"
+        ]
+      }
+    ],
+    "business_status": "OPERATIONAL",
+    "vicinity": "Lak Muang Road, Khet Phra Nakhon",
+    "fetched_at": "2025-04-23T07:30:55.248Z",
+    "description": "The Bangkok City Pillar Shrine stands as one of the city's most revered spiritual landmarks, marking the traditional foundation point of Bangkok itself. Erected in 1782 by King Rama I, the shrine houses a sacred pillar believed to ensure prosperity and protection for the Thai capital. Visitors are drawn to its elegant architecture and the deeply meaningful rituals performed by locals who come to pray for good fortune and guidance. The ornate structure features delicate wood carvings and decorations, providing a serene atmosphere amid the city's bustling surroundings. As a place where past and present converge, the shrine offers unique insight into Bangkok’s origins and enduring spiritual traditions. This makes it a significant stop for those seeking to understand the heart of Thai culture and history.",
+    "website": "https://bangkokcitypillarshrine.com/",
+    "maps_url": "https://www.google.com/maps/place/?q=place_id:ChIJbxEMbg6Z4jARJ7AV6fSNNeU",
+    "enrichment_status": "OK",
+    "category": "religious site",
+    "subcategory": "shrine",
+    "mood_tags": [
+      "spiritual",
+      "historic",
+      "cultural",
+      "must-see",
+      "local-gem"
+    ],
+    "suggested_visit_time": "morning",
+    "duration": "30 minutes",
+    "local_tip": "Dress modestly and take a moment to observe or participate in the traditional offerings—early mornings are quieter and allow for a more peaceful, meaningful visit.",
+    "popularity_score": 0.7,
+    "price_level": "free"
+  }
+]
