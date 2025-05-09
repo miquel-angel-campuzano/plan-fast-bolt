@@ -1,5 +1,6 @@
 import { useNavigate, Link } from 'react-router-dom';
 import { UserMenu } from './UserMenu';
+import React from 'react';
 
 export function Header() {
   const navigate = useNavigate();
