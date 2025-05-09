@@ -146,6 +146,14 @@ export function Header() {
         </div>
       )}
 
+      {/* AuthModal rendered at the root, not inside the menu or overlay */}
+      <AuthModal
+        isOpen={showAuthModal}
+        onClose={() => setShowAuthModal(false)}
+        onSuccess={() => {}}
+        mode="sign_in"
+      />
+
     </header>
   );
 }
