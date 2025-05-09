@@ -100,7 +100,14 @@ function PlannerApp() {
 
 {/* Onboarding Stepper after city selection */}
 {currentStep !== 'city' && currentStep !== 'loading' && currentStep !== 'itinerary' && (
-  <section className="min-h-[60vh] flex flex-col items-center justify-center px-4 py-16 bg-white">
+  <section className="min-h-[60vh] flex flex-col items-center justify-center px-4 py-16 bg-white relative">
+    <button
+      onClick={goBack}
+      className="absolute left-4 top-4 p-2 text-gray-600 hover:text-gray-800 hover:bg-gray-100 rounded-full transition-colors"
+      aria-label="Go back"
+    >
+      <ArrowLeft className="w-5 h-5" />
+    </button>
     <div className="max-w-xl w-full mx-auto text-center">
       <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
         {selectedCity ? `Your trip to ${selectedCity}` : ''}
