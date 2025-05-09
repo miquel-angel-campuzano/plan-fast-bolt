@@ -37,6 +37,10 @@ function PlannerApp() {
   useEffect(() => {
     if (state?.scrollToHero) {
       setPlanningStarted(false);
+      setSelectedCity('');
+      setSelectedCategories([]);
+      setTravelStyle('');
+      setCurrentStep('city');
       setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 0);
     }
   }, [state]);
