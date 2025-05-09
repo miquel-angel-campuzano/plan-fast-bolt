@@ -57,7 +57,9 @@ export function Header() {
             </Link>
           </nav>
 
-          <UserMenu />
+          <div className="hidden md:block">
+            <UserMenu />
+          </div>
 
           <button
             className="md:hidden p-2 text-neutral-700 hover:text-primary focus:outline-none"
@@ -70,8 +72,8 @@ export function Header() {
       </div>
 
       {mobileOpen && (
-        <div className="fixed inset-0 z-50 bg-black/40 flex flex-col md:hidden">
-          <div className="bg-white w-full max-w-xs h-full shadow-xl p-6 flex flex-col">
+        <div className="fixed inset-0 z-50 bg-black/40 flex md:hidden items-end justify-end">
+          <div className="bg-white h-full w-80 max-w-full shadow-xl p-6 flex flex-col right-0 animate-slide-in-right" style={{ transition: 'transform 0.3s', transform: mobileOpen ? 'translateX(0)' : 'translateX(100%)' }}>
             <button
               className="self-end mb-6 p-2 text-neutral-700 hover:text-primary focus:outline-none"
               onClick={() => setMobileOpen(false)}
@@ -116,7 +118,7 @@ export function Header() {
               ) : (
                 <>
                   <button
-                    onClick={() => { setShowAuthModal(true); setMobileOpen(false); }}
+                    onClick={() => setShowAuthModal(true)}
                     className="w-full px-4 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary-light transition-colors"
                   >
                     Sign In
