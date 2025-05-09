@@ -18,6 +18,7 @@ import { PricingPage } from './pages/PricingPage';
 import { Header } from './components/Header';
 import { LoadingTransition } from './components/LoadingTransition';
 import { trackEvent } from './lib/analytics';
+import React from 'react';
 
 type Step = 'city' | 'activities' | 'preferences' | 'loading' | 'itinerary';
 
