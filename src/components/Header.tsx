@@ -11,6 +11,7 @@ export function Header() {
   const { user } = useSupabaseUser();
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [showAuthModal, setShowAuthModal] = React.useState(false);
+  const [pendingAuthModal, setPendingAuthModal] = React.useState(false);
 
   const handleLogoClick = () => {
     navigate('/', { state: { scrollToHero: true } });
@@ -20,6 +21,14 @@ export function Header() {
     await supabase.auth.signOut();
     setMobileOpen(false);
   };
+
+  // Open AuthModal after menu closes if requested
+  React.useEffect(() => {
+    if (!mobileOpen && pendingAuthModal) {
+      setShowAuthModal(true);
+      setPendingAuthModal(false);
+    }
+  }, [mobileOpen, pendingAuthModal]);
 
   return (
     <header className="relative top-0 left-0 right-0 bg-white shadow-sm z-50">
@@ -120,24 +129,19 @@ export function Header() {
                   <button
                     onClick={() => {
                       setMobileOpen(false);
-                      setTimeout(() => setShowAuthModal(true), 300);
+                      setPendingAuthModal(true);
                     }}
                     className="w-full px-4 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary-light transition-colors"
                   >
                     Sign In
                   </button>
-                  <AuthModal
-                    isOpen={showAuthModal}
-                    onClose={() => setShowAuthModal(false)}
-                    onSuccess={() => {}}
-                    mode="sign_in"
-                  />
                 </>
               )}
             </div>
           </div>
         </div>
       )}
+
     </header>
   );
 }
