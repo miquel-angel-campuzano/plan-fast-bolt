@@ -128,8 +128,12 @@ export function Header() {
                 <>
                   <button
                     onClick={() => {
-                      setMobileOpen(false);
-                      setPendingAuthModal(true);
+                      if (mobileOpen) {
+                        setPendingAuthModal(true);
+                        setMobileOpen(false);
+                      } else {
+                        setShowAuthModal(true);
+                      }
                     }}
                     className="w-full px-4 py-2 bg-primary text-white rounded-lg font-semibold hover:bg-primary-light transition-colors"
                   >
