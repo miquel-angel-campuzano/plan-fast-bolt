@@ -91,13 +91,20 @@ export function Header() {
               <X className="w-6 h-6" />
             </button>
             <nav className="flex flex-col space-y-4 mb-8">
-              <Link
-                to="/saved-trips"
-                className="text-neutral-700 hover:text-primary text-lg font-medium"
-                onClick={() => setMobileOpen(false)}
+              <button
+                className="text-neutral-700 hover:text-primary text-lg font-medium text-left w-full"
+                onClick={() => {
+                  if (user) {
+                    navigate('/saved-trips');
+                    setMobileOpen(false);
+                  } else {
+                    setMobileOpen(false);
+                    setPendingAuthModal(true);
+                  }
+                }}
               >
                 My Saved Trips
-              </Link>
+              </button>
               <Link
                 to="/pricing"
                 className="text-neutral-700 hover:text-primary text-lg font-medium"

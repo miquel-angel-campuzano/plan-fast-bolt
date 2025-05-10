@@ -53,9 +53,9 @@ export function SavedTrips() {
   }
 
   return (
-    <div className="min-h-screen bg-neutral-200 py-12 px-4">
+    <div className="min-h-screen bg-neutral-200">
       <Header />
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto py-12 px-4">
         <h1 className="text-3xl font-bold text-neutral-700 mb-8">
           Your Saved Trips
         </h1>
