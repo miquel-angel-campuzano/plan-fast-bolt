@@ -46,12 +46,18 @@ export function Header() {
           </button>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/saved-trips"
-              className="text-neutral-500 hover:text-primary transition-colors"
+            <button
+              className="text-neutral-500 hover:text-primary transition-colors font-medium"
+              onClick={() => {
+                if (user) {
+                  navigate('/saved-trips');
+                } else {
+                  setShowAuthModal(true);
+                }
+              }}
             >
               My Saved Trips
-            </Link>
+            </button>
             <Link
               to="/pricing"
               className="text-neutral-500 hover:text-primary transition-colors"
