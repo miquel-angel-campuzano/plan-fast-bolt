@@ -5,7 +5,7 @@ const path = require('path');
 // Configuration
 const config = {
   api: {
-    key: 'AIzaSyBEvAaVidf4cWDxLLGzg942y0cbrXkfPEo',
+    key: 'XXXXXX',
     baseUrl: 'https://maps.googleapis.com/maps/api/place',
     maxRetries: 3,
     initialDelay: 2000,
