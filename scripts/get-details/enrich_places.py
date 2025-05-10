@@ -7,7 +7,7 @@ import os
 from typing import Dict, Any
 
 # Configuration
-PERPLEXITY_API_KEY = "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"
+PERPLEXITY_API_KEY = "XXXXX'
 PERPLEXITY_API_URL = "https://api.perplexity.ai/chat/completions"
 
 # Pricing information (per 1M tokens)
