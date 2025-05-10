@@ -2,7 +2,7 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-const API_KEY = '5ae2e3f221c38a28845f05b6affba0cf0f0002a0880111dd528a45ab';
+const API_KEY = 'XXXX';
 const BASE_URL = 'https://api.opentripmap.com/0.1/en';
 const LAT = 41.3851;    // Barcelona latitude
 const LON = 2.1734;     // Barcelona longitude
