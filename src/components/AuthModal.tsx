@@ -15,7 +15,7 @@ export function AuthModal({
   onClose,
   onSuccess,
   mode: initialMode = 'sign_in',
-  message = 'Create an account to save your trip'
+  message = 'Create an account to unlock all features'
 }: AuthModalProps) {
   const [mode, setMode] = useState<'sign_in' | 'sign_up'>(initialMode);
 
@@ -37,7 +37,7 @@ export function AuthModal({
         
         <div className="p-6">
           <h2 className="text-2xl font-bold text-neutral-700 mb-2 text-center">
-            {mode === 'sign_in' ? 'Welcome Back' : 'Create Account'}
+            {mode === 'sign_in' ? 'Welcome to PlanFast' : 'Create Account'}
           </h2>
           
           <p className="text-neutral-500 text-center mb-6">
