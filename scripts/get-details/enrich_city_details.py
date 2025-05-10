@@ -4,7 +4,7 @@ import time
 import os
 
 # --- Configuration ---
-API_KEY = "AIzaSyBEvAaVidf4cWDxLLGzg942y0cbrXkfPEo"  # Ensure this is your valid API key
+API_KEY = "XXXXX"  # Ensure this is your valid API key
 INPUT_DIR = "data/places"
 INPUT_FILE = "top_200_places_by_reviews.json"
 OUTPUT_FILE = "enriched_top_200_places.json"
