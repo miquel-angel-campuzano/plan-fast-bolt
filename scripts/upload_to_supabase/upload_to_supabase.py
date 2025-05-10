@@ -11,7 +11,7 @@ from supabase import create_client, Client
 
 # ─── CONFIG ────────────────────────────────────────────────────────────────────
 SUPABASE_URL = os.getenv("SUPABASE_URL", "https://eojfvcrnuvzzwayvfzvq.supabase.co")
-SUPABASE_KEY = os.getenv("SUPABASE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVvamZ2Y3JudXZ6endheXZmenZxIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0MzQ0NTQxMywiZXhwIjoyMDU5MDIxNDEzfQ.Q67NKeZmeNb3nvMT4nwnxvbYO_gG8XGKqAUk9OWOQto")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY", "XXXXX")
 INPUT_PATH = Path("data/places/enriched_places_perplexity.json")
 BATCH_SIZE = 50
 MAX_RETRIES = 3
